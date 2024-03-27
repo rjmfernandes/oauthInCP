@@ -18,9 +18,9 @@ Start:
 docker compose up -d
 ```
 
-Access Administration Console in http://keycloak:8080/ with user/password admin/admin and create a Real myrealm.
+Access Administration Console in http://keycloak:8080/ with user/password admin/admin and create a Realm `myrealm`.
 
-Create a Client named my-resource-center. Click Next. 
+Create a Client named `my-resource-center`. Click Next. 
 
 Toggle Client authentication to ON. Click Save.
 
@@ -38,7 +38,7 @@ Under Keys Toggle **Use JWKS URL**.
 
 Under Credentials copy the Client Secret for Client Authenticator "Client Id and Secret". Update the file [client.properties](./client.properties) with the corresponding copied secret.     
 
-Under Client scopes go to my-resource-center-dedicated and add a Mapper from configuration Audience and set Included Client Audience my-resource-center.
+Under Client scopes go to `my-resource-center-dedicated` and add a Mapper from configuration Audience and set Included Client Audience `my-resource-center`.
 
 # Restart the boker
 
