@@ -2,7 +2,7 @@
 
 Reference:
 - https://docs.confluent.io/platform/current/kafka/authentication_sasl/authentication_sasl_oauth.html
-- https://www.keycloak.org/docs/24.0.1/authorization_services/#_resource_server_create_clientb 
+
 
 # Keycloak
 
