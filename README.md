@@ -15,7 +15,7 @@ Add following to /etc/hosts:
 Start:
 
 ```shell
-docker compose up -d
+docker compose up -d keycloak
 ```
 
 Access Administration Console in http://keycloak:8080/ with user/password admin/admin and create a Realm `myrealm`.
@@ -40,10 +40,10 @@ Under Credentials copy the Client Secret for Client Authenticator "Client Id and
 
 Under Client scopes go to `my-resource-center-dedicated` and add a Mapper from configuration Audience and set Included Client Audience `my-resource-center`.
 
-# Restart the boker
+# Start CP
 
 ```shell
-docker compose up -d
+docker compose up -d broker
 ```
 
 Execute:
