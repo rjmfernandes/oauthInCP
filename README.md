@@ -22,23 +22,21 @@ Access Administration Console in http://keycloak:8080/ with user/password admin/
 
 Create a Client named `my-resource-center`. Click Next. 
 
-Toggle Client authentication to ON. Click Save.
+Toggle everything to ON except "Implicit flow". Click Save.
 
 Type the Root URL for your application. For example:
 
 ```
-http://${host}:${port}/my-resource-server
+http://keycloak:8080/my-resource-server
 ```
 
 You should have something like this:
 
 ![Capability Config](kc-1.jpg)
 
-Under Keys Toggle **Use JWKS URL**.
-
 Under Credentials copy the Client Secret for Client Authenticator "Client Id and Secret". Update the file [client.properties](./client.properties) with the corresponding copied secret.     
 
-Under Client scopes go to `my-resource-center-dedicated` and add a Mapper from configuration Audience and set Included Client Audience `my-resource-center`.
+Under Client scopes go to `my-resource-center-dedicated` and add a Mapper (name it "test" for example) from configuration Audience and set Included Client Audience `my-resource-center`.
 
 # Start CP
 
