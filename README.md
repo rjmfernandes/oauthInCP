@@ -36,7 +36,7 @@ You should have something like this:
 
 Under Credentials copy the Client Secret for Client Authenticator "Client Id and Secret". Update the file [client.properties](./client.properties) with the corresponding copied secret.     
 
-Under Client scopes go to `my-resource-center-dedicated` and add a Mapper (name it "test" for example) from configuration Audience and set Included Client Audience `my-resource-center`.
+Under Client scopes go to `my-resource-center-dedicated` and add a Mapper (name it "test" for example) from configuration Audience **and set Included Client Audience `my-resource-center`**.
 
 # Start CP
 
